@@ -2,8 +2,6 @@
 É um projeto React simples com o objetivo de praticar o uso de formulários com a biblioteca Formik e validações desse formulário com a biblioteca Yup.
 
 
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`
