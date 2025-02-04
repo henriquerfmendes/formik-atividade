@@ -1,5 +1,9 @@
 ## Projeto React
-É um projeto React simples com o objetivo de praticar o uso de formulários com a biblioteca Formik e validações desse formulário com a biblioteca Yup.
+Projeto React simples com o objetivo de praticar o uso de formulários com a biblioteca Formik e validações desse formulário com a biblioteca Yup.
+
+<img src="/src/images/validacoes.png" alt="validações">
+<p>
+<img src="/src/images/dados-enviados.png" alt="dados enviados">
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 In the project directory, you can run: npm start

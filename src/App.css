@@ -1,80 +1,141 @@
 .app {
   text-align: center;
   padding: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.error {
-  color: #e95858;
-  font-size: 0.8rem;
+.form-field {
+  margin-bottom: 1.5rem;
   text-align: left;
-  margin-top: 0.25rem;
 }
 
-h3 {
-  margin: 2rem;
-  color: #ffffff;
-}
-
-form {
-  max-width: 350px;
-  margin: auto;
-}
-
-form label {
-  font-size: 1rem;
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  margin: 1rem 0 0.3rem;
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #71fdae;
 }
 
 input {
   width: 100%;
-  padding: 0.65rem 0.5rem;
-  font-size: 0.9rem;
-  color: white;
-  border: 2px solid #25695f;
-  background-color: #1d3c3c;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 input:focus {
+  outline: none;
   border-color: #71fdae;
-}
-
-input::placeholder {
-  color: #a0aec0;
-}
-
-form div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-button {
-  margin: 1.5rem 0;
-  padding: 0.35rem 0.5rem;
-  background-color: #3ab7a1;
-  color: #0d1016;
-  border: none;
-  border-radius: 10px;
-  width: 50%;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
+  box-shadow: 0 0 0 2px rgba(113, 253, 174, 0.2);
 }
 
 input.input-error {
-  border-color: #f45151;
+  border-color: #ff6b6b;
+}
+
+input.input-error:focus {
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+button {
+  background-color: #71fdae;
+  color: #1c3935;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
 }
 
 button:disabled {
-  opacity: 0.35;
+  background-color: rgba(113, 253, 174, 0.5);
+  cursor: not-allowed;
 }
 
-ul {
-  list-style-type: none;
+button:not(:disabled):hover {
+  background-color: #4ce9a0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(113, 253, 174, 0.2);
+}
+
+.submitted-data {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.submitted-data h4 {
+  color: #71fdae;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.submitted-data ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submitted-data li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.submitted-data li:last-child {
+  border-bottom: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.app-header {
+  margin-bottom: 3rem;
+}
+
+.app-header h1 {
+  color: #71fdae;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+}
+
+.app-main {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
