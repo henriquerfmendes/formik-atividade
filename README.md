@@ -1,9 +1,17 @@
 ## Projeto React
 Projeto React simples com o objetivo de praticar o uso de formulários com a biblioteca Formik e validações desse formulário com a biblioteca Yup.
 
-<img src="/src/images/validacoes.png" alt="validações">
-<p>
-<img src="/src/images/dados-enviados.png" alt="dados enviados">
+### Demonstração
+
+<div style="display: flex; justify-content: center">
+  <img src="/src/images/validacoes.png" alt="validações" width="600px">
+  <p style="text-align: center"><em>Exemplo de validações do formulário mostrando mensagens de erro</em></p>
+</div>
+
+<div style="display: flex; justify-content: center">
+  <img src="/src/images/dados-enviados.png" alt="dados enviados" width="600px">
+  <p style="text-align: center"><em>Visualização dos dados após envio bem-sucedido do formulário</em></p>
+</div>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 In the project directory, you can run: npm start
