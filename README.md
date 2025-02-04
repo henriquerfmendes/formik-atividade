@@ -8,6 +8,8 @@ Projeto React simples com o objetivo de praticar o uso de formulários com a bib
   <p style="text-align: center"><em>Exemplo de validações do formulário mostrando mensagens de erro</em></p>
 </div>
 
+<br/> 
+
 <div style="display: flex; justify-content: center">
   <img src="/src/images/dados-enviados.png" alt="dados enviados" width="600px">
   <p style="text-align: center"><em>Visualização dos dados após envio bem-sucedido do formulário</em></p>
