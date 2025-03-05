@@ -64,13 +64,13 @@ This project is a simple form developed with React, using the Formik and Yup lib
 ## Imagens do projeto / Some images of the project
 
 <div style="display: flex; justify-content: center">
-  <img src="/src/images/validacoes.png" alt="validações" width="600px">
+  <img src="/src/images/form-dataSent.png" alt="data sent" width="600px">
 </div>
 
 <br/> 
 
 <div style="display: flex; justify-content: center">
-  <img src="/src/images/dados-enviados.png" alt="dados enviados" width="600px">
+  <img src="/src/images/form-validation.png" alt="validations" width="600px">
 </div>
 
 

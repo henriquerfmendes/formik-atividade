@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Formulário React</h1>
-        <p className="app-subtitle">Desenvolvido com Formik e Yup</p>
+        <h1>React Form</h1>
+        <p className="app-subtitle">Developed with Formik and Yup</p>
       </header>
       <main className="app-main">
         <Formulario />
