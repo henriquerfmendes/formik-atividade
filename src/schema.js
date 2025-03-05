@@ -1,29 +1,30 @@
 import * as yup from "yup";
-const passwordSchema = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?!.*\s).{8,}$/;
+const passwordSchema =
+  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?!.*\s).{8,}$/;
 
 export const schema = yup.object().shape({
   email: yup
     .string()
-    .email("Por favor, entre com um e-mail válido")
-    .required("Obrigatório"),
+    .email("Please enter a valid email address")
+    .required("Required"),
   age: yup
     .number()
-    .typeError("Idade deve ser um número")
-    .positive('Idade deve ser um valor maior que zero')
-    .integer('Idade deve ser um valor inteiro')
-    .min(18, 'Você deve ter pelo menos 18 anos')
-    .max(120, 'Idade inválida')
-    .required("Idade é obrigatória"),
+    .typeError("Age must be a number")
+    .positive("Age must be a positive value")
+    .integer("Age must be an integer")
+    .min(18, "You must be at least 18 years old")
+    .max(120, "Invalid age")
+    .required("Age is required"),
   password: yup
     .string()
-    .min(8, 'A senha deve possuir ao menos 8 caracteres')
+    .min(8, "Password must be at least 8 characters long")
     .matches(passwordSchema, {
       message:
-      "A senha deve conter pelo menos: 8 caracteres, 1 número, 1 letra maiúscula, 1 letra minúscula e 1 caractere especial",
+        "Password must contain at least: 8 characters, 1 number, 1 uppercase letter, 1 lowercase letter, and 1 special character",
     })
-    .required("Senha é obrigatória"),
+    .required("Password is required"),
   confirmPassword: yup
     .string()
-    .oneOf([yup.ref("password"), null], "As senhas devem coincidir")
-    .required("Confirmação de senha é obrigatória"),
+    .oneOf([yup.ref("password"), null], "Passwords must match")
+    .required("Password confirmation is required"),
 });

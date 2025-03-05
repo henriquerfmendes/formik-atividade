@@ -28,26 +28,21 @@ const Formulario = () => {
             <InputField
               id="email"
               type="email"
-              label="E-mail"
-              placeholder="Entre com o e-mail"
+              label="Email"
+              placeholder="Email"
             />
-            <InputField
-              id="age"
-              type="age"
-              label="Idade"
-              placeholder="Entre com a idade"
-            />
+            <InputField id="age" type="age" label="Age" placeholder="Age" />
             <InputField
               id="password"
               type="password"
-              label="Senha"
-              placeholder="Entre com a senha"
+              label="Password"
+              placeholder="Password"
             />
             <InputField
               id="confirmPassword"
               type="password"
-              label="Confirme a senha"
-              placeholder="Confirme a senha"
+              label="Confirm password"
+              placeholder="Confirm password"
             />
             <div>
               <button
@@ -58,7 +53,7 @@ const Formulario = () => {
                   formikProps.isSubmitting
                 }
               >
-                {formikProps.isSubmitting ? "Enviando..." : "Enviar"}
+                {formikProps.isSubmitting ? "Sending..." : "Send"}
               </button>
             </div>
           </Form>
@@ -66,14 +61,14 @@ const Formulario = () => {
       </Formik>
       {valoresInformados && (
         <div className="submitted-data">
-          <h4>Dados Enviados:</h4>
+          <h4>Data Sent:</h4>
           <ul>
             {Object.entries(valoresInformados).map(([key, value]) => {
               const labels = {
-                email: "E-mail",
-                age: "Idade",
-                password: "Senha",
-                confirmPassword: "Confirmação de senha",
+                email: "Email",
+                age: "Age",
+                password: "Password",
+                confirmPassword: "Password confirmation",
               };
               return (
                 <li key={key}>
